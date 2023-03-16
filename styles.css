@@ -1,0 +1,268 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-black: #303841;
+  --main-gray: #303841;
+  --main-blue: #45567d;
+/*Nuevos*/
+  --main-dark: #020000;
+  --main-brick: #6A312A;
+  --main-dbrick: #3A1C1C;
+  --main-lblue: #344C69;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: var(--main-brick)
+}
+
+
+body {
+  text-align: center;
+  color: white;
+  font-family: "helvetica";
+ 
+}
+
+
+
+
+
+h1 {
+  margin-top: 200px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);}
+
+/*Nav*/
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-gray);
+ 
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 1rem;
+  font-family: "impact";
+  letter-spacing: 0.5px;
+}
+
+.nav-list a {
+  display: block;
+  padding: 10px;
+  font-size: 22px;
+}
+.nav-list a:hover {
+  background: var(--main-blue);
+}
+
+/*Welcome*/
+.welcome{
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.welcome > h1{
+  color: white;
+  font-size: 42px;
+}
+
+.subt {
+  font-size: 22px;
+  text-align: center;
+  margin-left: 265px;
+  color: white;
+}
+
+
+/*projetcs*/
+
+.work-section{
+  margin-top: 260px;
+  background-color: darkgrey;
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+
+
+.work-header{
+  font-size: 48px;
+  color: black;
+  font-family: impact;
+  letter-spacing: 1px;
+
+}
+
+.divider{
+  border: 1px solid black;
+  width: 70%;
+  margin: 20px auto 0 auto;
+  margin-top: 0.5px;
+  margin-bottom: 50px;
+}
+
+.project{
+  background: var(--main-dbrick);
+  padding-bottom: 0px;
+  border: 1px solid black;
+
+  
+}
+
+.work-image{  
+  width: 100%;
+  height: 90%;
+  display: block;
+  }
+
+  .retratos{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 90%;
+
+  }
+
+.work-title {
+  font-family: helvetica, bold;
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  margin-top: 5px;
+}
+
+/*About*/
+
+.about{
+  background-color: var(--main-lblue);
+  margin: 0%;
+  padding-top: 5%;
+  margin-bottom: 10px;
+  padding-bottom: 70px;
+}
+
+h3{
+  font-size: 23px;
+}
+
+.about-text{
+  margin-top: 50px;
+  margin-right: 200px;
+  margin-left: 200px;
+  color: white;
+  font-size: 25px;
+}
+
+.square{
+  background-color: white;
+  width: 100px;
+  height: 90px;
+  float: right;
+  margin-right: 60px;
+  margin-top: 40px;
+
+}
+
+.content{
+  background-color: grey;
+}
+
+
+
+/*cntact*/
+.contact-section{
+  margin-top: 0px;
+  padding-bottom: 20px;
+
+}
+
+h5{
+  font-size: 36px;
+  font-family: "helvetica";
+  font-weight: bold;
+  font-weight: 100;
+}
+
+
+.contact-links{
+  padding-top: 15px;
+  
+}
+
+.btn-contact{
+  color:blue;
+
+
+}
+
+.btn-contact:hover{
+  color: white;
+}
+
+
+
+
+
+/*Pagina 1er proyect*/
+
+.space{
+  padding-bottom: 40px;
+}
+
+.page1{
+  background-color: var(--main-dark);
+}
+
+
+.welcomeproject{
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.welcomeproject > h1, p {
+  font-size: 33px;
+  margin: auto;
+  text-align: center;
+  color: grey;
+}
+
+
+
+
+.slider-indicators{
+  padding-top: 100px;
+  border: 1px solid black;
+}

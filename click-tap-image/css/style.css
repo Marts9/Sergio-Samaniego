@@ -1,0 +1,94 @@
+html,
+body {
+    margin: 0;
+    position: relative;
+}
+
+body {
+    font-size: 12pt;
+	font-family: Helvetica, sans-serif;
+	background-color: black;
+}
+
+body * {
+	box-sizing: border-box;
+	text-align: center;
+  	color: white;
+  	
+}
+
+h1,h2,h3,h4,p {
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: tomato;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	color: tomato;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+section#main {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 40px 0;
+}
+
+section#main >.inner {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: black;
+	border-radius: 10px;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 3px;
+	transition: all 200ms ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+	background-color: #333;
+	color: white;
+	text-decoration: none;
+}
+
+.btconf{	
+	padding: 0px;
+	height: 10%;
+	position: absolute;
+	top: 300px;
+	transition: 1s;
+
+
+}
+
+/*.slider-nav::after{
+	background-color: green;
+	border: 2px solid blue;
+}
+*/
+.slider-nav:hover{		
+	transform: scale(2.0);
+	
+
+
+}
+
+
+
+

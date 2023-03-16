@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- slider -->
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+		<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous"> 
+        
+        <!--zoom  -->
+        <link rel="stylesheet" href="css/image-zoom.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="js/image-zoom.js" type="text/javascript"></script>    
+        
+        <script>
+
+            var $ = jQuery.noConflict();
+
+            $(document).ready(function(){
+
+                // Image zoom plugin code
+                // var zoomImage = $('#imageZoom');
+                // var zoomImageExtra = $('#imageZoomExtra');
+                // var zoomImagePlus = $('#imageZoomExtraPlus');
+                var zoomImages = $('.zoom-images');
+
+                // zoomImage.imageZoom();
+                // zoomImageExtra.imageZoom({zoom : 200});
+                // zoomImagePlus.imageZoom({zoom : 300});
+
+                zoomImages.each(function() {
+                    $(this).imageZoom({zoom: 200});
+                });
+
+            });
+
+        </script>
+
+	</head>
+	<body>
+
+		<div>
+			<h1>Proyecto 1</h1>
+			<p>Argentina en diciembre</p>
+		</div>
+
+		<!-- slider-nav-autoplay data-slider-nav-autoplay-interval="4000" -->
+		<div class="wraper center">	
+			<div class="swiffy-slider slider-nav-caretfill  slider-indicators-round slider-indicators-highlight" >
+    <ul class="slider-container center">
+        <li>
+            <div id="slide1">
+                <img src="imgpem/Portada.jpg" style="max-width: 100%; margin-bottom: 45px;" class="zoom-images">
+            </div>
+        </li>
+        <li>
+            <div id="slide2"><img src="imgpem/1.jpg" style="max-width: 100%;height: auto;" class="zoom-images">
+            </div>
+        </li>
+        <li>
+            <div id="slide3"><img src="imgpem/2.jpg" style="max-width: 100%;height: auto;"></div class="zoom-images">
+        </li>
+        <li>
+            <div id="slide4"><img src="imgpem/3.jpg" style="max-width: 100%;height: auto;"></div class="zoom-images">
+        </li>
+        <li>
+            <div id="slide5"><img src="imgpem/4.jpg" style="max-width: 100%;height: auto;"></div class="zoom-images">
+        </li>
+
+    </ul>
+
+    <button type="button" class="slider-nav  btconf" ></button>
+    <button type="button" class="slider-nav slider-nav-next btconf"></button>
+
+    <ul class="slider-indicators">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+		
+<!--         <script>
+        /* Initiate Magnify Function
+        with the id of the image, and the strength of the magnifier glass:*/
+        magnify("myimage", 2);
+        </script> -->
+		
+	</body>
+</html>
